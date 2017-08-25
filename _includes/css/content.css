@@ -13,10 +13,11 @@
 } 
 
 .content-container p {
-  margin-bottom: 10px;
+  margin-top: 10px;
 }
 
 .content-container img{
+ margin-top: 30px;
  width: 75%;
 }
 
@@ -27,13 +28,12 @@
   font-family: 'Alegreya', serif;
   font-style: italic;
   margin-top: 1em;
-  margin-bottom: 0.5em;
 }
 
 .date-undertitle{
   color: #9a9a9a;
   display: block;
-  margin-bottom: 1em;
+  margin-top: 0.5em;
 }
 
 .readmore {
