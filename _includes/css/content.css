@@ -1,0 +1,46 @@
+.content-container {
+  padding: 0px 40px 40px 40px;
+  font-size: 20px;
+  width: 70%;
+  float: left;
+}
+
+
+@media only screen and (max-width: 400px){
+.content-container{
+	width: 100%;
+}
+} 
+
+.content-container p {
+  margin-bottom: 10px;
+}
+
+.content-title{
+  color: #000000;
+  line-height: 1em;
+  display: block;
+  font-family: 'Alegreya', serif;
+  font-style: italic;
+  margin-top: 1em;
+  margin-bottom: 0.3em;
+}
+
+.date-undertitle{
+  color: #9a9a9a;
+  display: block;
+  margin-bottom: 1em;
+}
+
+.readmore {
+  font-weight: 700;
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 4em;
+}
+
+.data-append{
+  color: #9a9a9a;
+}
+
+

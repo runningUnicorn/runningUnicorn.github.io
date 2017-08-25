@@ -1,0 +1,14 @@
+# Permalinks
+permalink:        pretty
+
+# Setup
+title:            Photography Factory
+tagline:          'For me, the camera is a sketch book, an instrument of intuition and spontaneity. -- Henri Cartier Bresson'
+baseurl:          /
+
+author:
+  name:           Long
+  url:            https://twitter.com/mdo
+
+paginate:         5
+
