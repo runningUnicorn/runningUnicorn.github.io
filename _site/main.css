@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #268bd2;
+}
+
+.col {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.header {
+	background: #000000;
+	color: rgb(255,255,255);
+	padding-top: 10px;
+	padding-bottom: 20px;
+	box-shadow: 0 0 0 0,0 6px 12px rgba(34,34,34,0.3);
+}
+
+.header-container{
+	font-family: 'Lato', sans-serif;
+	position: relative;
+}
+
+.header-container:after{
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.header-title{
+	float: left;
+	width: 50%;
+	font-family: 'Lato', sans-serif;
+}
+
+.header-title h1{
+	font-size: 40px;
+	font-weight: 700;
+}
+
+.header-title h4{
+	font-weight: 700;
+}
+
+.header-nav{
+	width: 50%;
+	min-width: 300px;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+
+.header-nav-item{
+	float: right;
+	color: white;
+	font-size: 25px;
+	font-family: 'Lato', sans-serif;
+	margin-left: 20px;
+}
+
+@media only screen and (max-width: 600px){
+.header-nav-item{
+	clear: both;
+}
+}
+
+
+.header-nav a:hover {
+     text-shadow: 3px 3px 10px white;
+}
+
+
+.sidebar{
+	width: 30%;
+	min-width: 300px;
+	float: right;
+	padding: 0px 40px 0px 40px;
+}
+
+.sidebar h2{
+	font-family: 'Alegreya', serif;
+	font-style: italic;
+	line-height: 2em;
+}
+
+.sidebar li{
+	font-family: 'Copse', serif;
+	font-size: 20px;
+	line-height: 1em;
+	margin-bottom: 0.5em;
+	letter-spacing: 0;
+}
+
+.main-container {
+  margin-top: 60px;
+  font-family: 'Cardo', serif;
+  margin-bottom: 80px;
+}
+
+.main-container:after{
+	content: "";
+	display: table;
+	clear: both;
+} 
+
+.content-container {
+  padding: 0px 40px 40px 40px;
+  font-size: 20px;
+  width: 70%;
+  float: left;
+}
+
+
+@media only screen and (max-width: 400px){
+.content-container{
+	width: 100%;
+}
+} 
+
+.content-container p {
+  margin-top: 10px;
+}
+
+.content-container img{
+ margin-top: 30px;
+ width: 100%;
+}
+
+.content-title{
+  color: #000000;
+  line-height: 1em;
+  display: block;
+  font-family: 'Alegreya', serif;
+  margin-top: 1em;
+}
+
+.date-undertitle{
+  color: #9a9a9a;
+  display: block;
+  margin-top: 0.5em;
+}
+
+.readmore {
+  font-weight: 700;
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 4em;
+}
+
+.data-append{
+  color: #9a9a9a;
+}
+
+
+
