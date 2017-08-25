@@ -16,6 +16,10 @@
   margin-bottom: 10px;
 }
 
+.content-container img{
+ width: 75%;
+}
+
 .content-title{
   color: #000000;
   line-height: 1em;
@@ -23,7 +27,7 @@
   font-family: 'Alegreya', serif;
   font-style: italic;
   margin-top: 1em;
-  margin-bottom: 0.3em;
+  margin-bottom: 0.5em;
 }
 
 .date-undertitle{
