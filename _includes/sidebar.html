@@ -13,7 +13,10 @@
     </ul>
   <h2>Links</h2>
     <ul>
-      <li><a href="https://github.com/photography-factory">My Github</a></li>
+	  {% for link in site.data.links %}
+		<li><a href={{link.url}}>{{link.title}}</a></li>
+	  {% endfor %}
     </ul>
+  {% include google-adsense.html %}
   
 </div>

@@ -12,6 +12,7 @@ a {
   color: #268bd2;
 }
 
+
 .col {
   max-width: 1000px;
   margin: auto;
@@ -21,3 +22,4 @@ a {
 {% include css/sidebar.css %}
 {% include css/main.css %}
 {% include css/content.css %}
+{% include css/tough.css %}
