@@ -15,8 +15,9 @@ a {
 input[type=submit] {
     background-color: black;
     color: white;
-    padding: 12px 20px;
-    border: none;
+    padding: 10px 18px;
+    margin: 5px 10px;
+    float: right;
     border-radius: 4px;
     cursor: pointer;
 }
