@@ -12,11 +12,18 @@ a {
   color: #268bd2;
 }
 
+.share-page{
+  margin: 5px 1px;
+  font-size:12px
+}
+
 .share-page a{
   color: white;
   background-color: black;
   border: none;
   border-radius: 3px;
+  font-size: 12;
+  margin: 3px;
 }
 
 input[type=submit] {
