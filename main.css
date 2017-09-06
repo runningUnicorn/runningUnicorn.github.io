@@ -16,6 +16,12 @@ a {
   font-size:15px;
 }
 
+.share-page:after{
+	content: "";
+	display: table;
+	clear: both;
+} 
+
 .share-page a{
   color: white;
   background-color: black;
