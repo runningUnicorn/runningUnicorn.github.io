@@ -17,7 +17,6 @@ a {
 }
 
 .share-page a{
-  width: 30px;
   color: white;
   background-color: black;
   border: none;
@@ -25,6 +24,7 @@ a {
   margin: 10px 5px 10px 0;
   padding: 2px 4px;
   display: block;
+  float: left;
 }
 
 input[type=submit] {
