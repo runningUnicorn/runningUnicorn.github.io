@@ -23,6 +23,12 @@ input[type=submit] {
     cursor: pointer;
 }
 
+input[type=submit] :after{
+	content: "";
+	display: table;
+	clear: both;
+} 
+
 input{
   font-size: 20px;
 }
