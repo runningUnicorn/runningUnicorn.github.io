@@ -24,7 +24,7 @@ a {
   border-radius: 3px;
   margin: 10px 5px 10px 0;
   padding: 2px 4px;
-  display: box;
+  display: block;
 }
 
 input[type=submit] {
