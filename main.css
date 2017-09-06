@@ -14,10 +14,10 @@ a {
 
 .share-page{
   font-size:15px;
-  margin-top: 10px;
 }
 
 .share-page a{
+  width: 30px;
   color: white;
   background-color: black;
   border: none;
