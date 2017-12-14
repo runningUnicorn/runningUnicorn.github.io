@@ -3,7 +3,7 @@ layout: default
 ---
 
 <h3>Wish List<h3>
-<h5>&emsp; ——愿望还是要有的，一不小心就会实现的.</h5>
+<h5>&emsp;&emsp; ——愿望还是要有的，一不小心就会实现的.</h5>
 
 <p></p>
 <h4><i><u>Milestones</u></i></h4>
@@ -19,20 +19,20 @@ layout: default
 <ul>
 	{% for p in site.data.progress %}
 	{% if p.level == 0 %}
-		<li>{{p.title}} &#9702 </li>
+		<li>{{p.title}} &#9898 </li>
 	{% elsif  p.level == 1 %}
-		<li>{{p.title}} &#8226 </li>
+		<li>{{p.title}} &#9785 </li>
 	{% elsif  p.level == 2 %}
-		<li>{{p.title}} &#8226&#8226 </li>
+		<li>{{p.title}} &#9786 </li>
 	{% elsif  p.level == 3 %}
 		<li>{{p.title}} &#8226&#8226#8226 </li>
 	{% else %}
-		<li>{{book.title}}，{{book.author}} &#8226&#8226&#8226&#8226 </li>
+		<li>{{book.title}}，{{book.author}} &#9786&#9786 </li>
 	{% endif %}
 {% endfor %}
 </ul>
-<p><b>( </b>&#9702: not yet / &#8226: started / &#8226&#8226: felt changes / 
-&#8226&#8226&#8226: better / &#8226&#8226&#8226&#8226: on the way<b> )</b></p>
+<p><b>( </b>&#9898: not yet / &#9785: started / &#9786: felt changes / 
+&#9787: better / &#9787&#9787: on the way<b> )</b></p>
 
 <p></p>
 <h4><i><u>Reading List</u></i></h4>
