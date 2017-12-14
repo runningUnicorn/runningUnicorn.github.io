@@ -1,8 +1,8 @@
 .header {
 	background: #000000;
 	color: rgb(255,255,255);
-	padding-top: 10px;
-	padding-bottom: 20px;
+	padding-top: 20px;
+	padding-bottom: 30px;
 	box-shadow: 0 0 0 0,0 6px 12px rgba(34,34,34,0.3);
 }
 
@@ -34,7 +34,7 @@
 
 .header-nav{
 	width: 50%;
-	min-width: 400px;
+	min-width: 300px;
 	position: absolute;
 	bottom: 0;
 	right: 0;
