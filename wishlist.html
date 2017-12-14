@@ -9,10 +9,10 @@ layout: default
 <h4><i><u>Milestones</u></i></h4>
 <ul>
 	<li>Open this semi-private Blog &#10004 </li>
-	<li>潜水证 &#927 </li>
-	<li>滑雪：练习 &#926 -> 教练证件 &#927 </li>
+	<li>潜水证 &#9898 </li>
+	<li>滑雪：练习 &#926 -> 教练证件 &#9898 </li>
 </ul>
-<p><b>( </b>&#927: to do / &#926: in progress / &#10004: done<b> )</b></p>
+<p>&#9898: to do / &#926: in progress / &#10004: done</p>
 
 <p></p>
 <h4><i><u>Progress Bar</u></i></h4>
@@ -31,8 +31,8 @@ layout: default
 	{% endif %}
 {% endfor %}
 </ul>
-<p><b>( </b>&#9898: not yet / &#9785: started / &#9786: felt changes / 
-&#9787: better / &#9787&#9787: on the way<b> )</b></p>
+<p>&#9898: not yet / &#9785: started / &#9786: felt changes / 
+&#9787: better / &#9787&#9787: on the way</p>
 
 <p></p>
 <h4><i><u>Reading List</u></i></h4>
@@ -43,11 +43,11 @@ layout: default
 	{% elsif book.progress == 'reading' %}
 		<li>{{book.title}}，{{book.author}} &#926 </li>
 	{% else %}
-		<li>{{book.title}}，{{book.author}} &#927 </li>
+		<li>{{book.title}}，{{book.author}} &#9898 </li>
 	{% endif %}
 {% endfor %}
 </ul>
-<p><b>( </b>&#927: to read / &#926: reading / &#10004: red<b> )</b></p>
+<p>&#9898: to read / &#926: reading / &#10004: red</p>
 
 <p></p>
 <h4><i><u>Reading List (specialty)</u></i></h4>
@@ -58,11 +58,11 @@ layout: default
 	{% elsif book.progress == 'reading' %}
 		<li>{{book.title}}，{{book.author}} &#926 </li>
 	{% else %}
-		<li>{{book.title}}，{{book.author}} &#927 </li>
+		<li>{{book.title}}，{{book.author}} &#9898 </li>
 	{% endif %}
 {% endfor %}
 </ul>
-<p><b>( </b>&#927: to read / &#926: reading / &#10004: have read<b> )</b></p>
+<p>&#9898: to read / &#926: reading / &#10004: have read</p>
 
 
 
