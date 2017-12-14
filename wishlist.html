@@ -39,7 +39,15 @@ layout: default
 <p></p>
 <h4><i><u>Reading List (specialty)</u></i></h4>
 <ul>
-	<li>Convex Optimization &#927 </li>
+	{% for book in site.data.readlist_specialty %}
+	{% if book.progress == 'red' %}
+		<li>{{book.name}}，{{book.author}} &#10004 </li>
+	{% elsif book.progress == 'reading' %}
+		<li>{{book.name}}，{{book.author}} &#926 </li>
+	{% else %}
+		<li>{{book.name}}，{{book.author}} &#927 </li>
+	{% endif %}
+{% endfor %}
 </ul>
 <p>(&#927: to read / &#926: reading / &#10004: red)</p>
 
