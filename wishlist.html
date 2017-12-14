@@ -3,7 +3,7 @@ layout: default
 ---
 
 <h3>Wish List<h3>
-<h5>&#9————愿望还是要有的，一不小心就会实现的.<h5>
+<h5>&#9——愿望还是要有的，一不小心就会实现的.</h5>
 
 <p></p>
 <h4><i><u>Milestones</u></i></h4>
@@ -11,14 +11,14 @@ layout: default
 	<li>Open this semi-private Blog &#10004 </li>
 	<li>滑雪：练习 &#926 -> 规范 &#927 -> 教练 &#927 </li>
 </ul>
-<p><b>(</b>&#927: to do / &#926: in progress / &#10004: done<b>)</b></p>
+<p><b>( </b>&#927: to do / &#926: in progress / &#10004: done<b> )</b></p>
 
 <p></p>
 <h4><i><u>Progress Bar</u></i></h4>
 <ul>
 	{% for p in site.data.progress %}
 	{% if p.level == 0 %}
-		<li>{{p.title}} &#10004 </li>
+		<li>{{p.title}} &#9702 </li>
 	{% elsif  p.level == 1 %}
 		<li>{{p.title}} &#8226 </li>
 	{% elsif  p.level == 2 %}
@@ -30,8 +30,8 @@ layout: default
 	{% endif %}
 {% endfor %}
 </ul>
-<p><b>(</b>&#9702: not yet / &#8226: started / &#8226&#8226: felt changes / 
-&#8226&#8226&#8226: better / &#8226&#8226&#8226&#8226: on the way<b>)</b></p>
+<p><b>( </b>&#9702: not yet / &#8226: started / &#8226&#8226: felt changes / 
+&#8226&#8226&#8226: better / &#8226&#8226&#8226&#8226: on the way<b> )</b></p>
 
 <p></p>
 <h4><i><u>Reading List</u></i></h4>
@@ -46,7 +46,7 @@ layout: default
 	{% endif %}
 {% endfor %}
 </ul>
-<p><b>(</b>&#927: to read / &#926: reading / &#10004: red<b>)</b></p>
+<p><b>( </b>&#927: to read / &#926: reading / &#10004: red<b> )</b></p>
 
 <p></p>
 <h4><i><u>Reading List (specialty)</u></i></h4>
@@ -61,7 +61,7 @@ layout: default
 	{% endif %}
 {% endfor %}
 </ul>
-<p><b>(</b>&#927: to read / &#926: reading / &#10004: red<b>)</b></p>
+<p><b>( </b>&#927: to read / &#926: reading / &#10004: red<b> )</b></p>
 
 
 
