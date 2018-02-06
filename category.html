@@ -7,9 +7,8 @@ title: archive
   <h2 class="content-title">{{ category | first }}</h2>
   <hr>
 	  <ul>
-		 {% for posts in category %}
-		   {% for post in posts %}
-			 {% if post.url %}
+		{% for post in category %}
+			{% if post.url %}
 			  <li>
 				<h4>
 				<a href="{{ post.url }}">
@@ -19,7 +18,6 @@ title: archive
 				</h4>
 			  </li>
 			{% endif %}
-		  {% endfor %}
 		{% endfor %}
 	 </ul>
  {% endfor %}
