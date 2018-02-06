@@ -9,6 +9,7 @@ title: archive
 	  <ul>
 		 {% for posts in category %}
 		   {% for post in posts %}
+			 {% if post.url %}
 			  <li>
 				<h4>
 				<a href="{{ post.url }}">
@@ -17,6 +18,7 @@ title: archive
 				</a>
 				</h4>
 			  </li>
+			{% endif %}
 		  {% endfor %}
 		{% endfor %}
 	 </ul>
