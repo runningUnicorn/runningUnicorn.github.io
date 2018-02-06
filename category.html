@@ -7,8 +7,8 @@ title: archive
   <h2 class="content-title">{{ category | first }}</h2>
   <hr>
 	  <ul>
-		{% for post in category %}
-			{% if post.url %}
+		{% for post in site.categories.category %}
+			 {% if post.url %}
 			  <li>
 				<h4>
 				<a href="{{ post.url }}">
