@@ -7,6 +7,9 @@
 - title: 秘密
   author: 东野圭吾
   progress: red
+- title: 岛上书店
+  author: Gabrielle Zevin
+  progress: red
 - title: 乌合之众
   author: 古斯塔夫·勒庞
   progress: reading
@@ -15,13 +18,17 @@
   progress: reading
 - title: 天幕红尘
   author: 豆豆
-  progress: reading
+  progress: red
 - title: 爱你就像爱生命
   author: 王小波
   progress: reading
 - title: 时间的形状
   author: 汪洁
-  progress: reading
+  progress: red
 - title: 我们仨
   author: 杨绛
   progress: reading
+- title: 数据之巅
+  author: 徐子沛
+  progress: reading
+
