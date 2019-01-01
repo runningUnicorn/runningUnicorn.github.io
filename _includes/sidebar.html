@@ -1,10 +1,12 @@
 <div class = "sidebar">
+  <!--
   <h2>Category</h2>
 	<ul>
 	  {% for category in site.categories %}
 		<li><a href={{site.baseurl}}/category>{{category | first}}</a></li>
 	  {% endfor %}
 	</ul>
+  //-->
   <h2>Recent Posts</h2>
     <ul>
       {% for post in site.posts limit:site.recent-num %}
