@@ -5,20 +5,20 @@ title: home
 
 {% assign limit = 0 %}
 {% for post in site.posts%}
-  {% assign start = note.title | slice: 0,3 %}
+  {% assign start = post.title | slice: 0,3 %}
   <h2>{{ start }}</h2>
   {% if start != "Note" %}
-  <div>
-    <h2>
-      <a class = "content-title" href="{{ post.url }}">
-        {{ post.title }}
-      </a>
-    </h2>
-    <span class="date-undertitle">{{ post.date | date_to_string }}</span>
-    {{ post.content | strip_html | truncate:150 }}
-	<a class = "readmore" href={{site.baseurl}}{{post.url}}>Read More</a>
-  </div>
-  {% assign limit = limit + 1 %}
+    <div>
+      <h2>
+        <a class = "content-title" href="{{ post.url }}">
+          {{ post.title }}
+        </a>
+      </h2>
+      <span class="date-undertitle">{{ post.date | date_to_string }}</span>
+      {{ post.content | strip_html | truncate:150 }}
+    <a class = "readmore" href={{site.baseurl}}{{post.url}}>Read More</a>
+    </div>
+    {% assign limit = limit + 1 %}
     {% if limit == site.article_num %}
       {% break %}
     {% endif %}
