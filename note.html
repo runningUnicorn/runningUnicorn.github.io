@@ -3,7 +3,10 @@ layout: default
 title: home
 ---
 
-{% for note in site.notes limit:site.article_num %}
+{% for note in site.posts limit:site.article_num %}
+  {% assign startsWith = 'Note' %}
+  {% assign checkArray = note.title | split:startsWith %}
+  {% if checkArray[0] == blank %}
   <div>
     <h2>
       <a class = "content-title" href="{{ note.url }}">
@@ -12,6 +15,7 @@ title: home
     </h2>
     <span class="date-undertitle">{{ note.date | date_to_string }}</span>
     {{ note.content | strip_html | truncate:150 }}
-	<a class = "readmore" href={{site.baseurl}}{{note.url}}>Read More</a>
+  <a class = "readmore" href={{site.baseurl}}{{note.url}}>Read More</a>
+  {% endif %}
   </div>
 {% endfor %}
