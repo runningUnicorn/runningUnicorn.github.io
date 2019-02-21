@@ -5,8 +5,7 @@ title: home
 
 {% assign limit = 0 %}
 {% for post in site.posts%}
-  {% assign start = post.title | slice: 0,3 %}
-  <h2>{{ start }}</h2>
+  {% assign start = post.title | slice: 0,4 %}
   {% if start != "Note" %}
     <div>
       <h2>
