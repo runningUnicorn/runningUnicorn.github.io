@@ -17,7 +17,7 @@ title: home
       {{ post.content | strip_html | truncate:150 }}
     <a class = "readmore" href={{site.baseurl}}{{post.url}}>Read More</a>
     </div>
-    {% increment limit %}
+    {% assign limit = limit | plus: 1 %}
     {% if limit == site.article_num %}
       {% break %}
     {% endif %}
