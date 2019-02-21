@@ -1,0 +1,17 @@
+---
+layout: default
+title: home
+---
+
+{% for notes in site.notes limit:site.article_num %}
+  <div>
+    <h2>
+      <a class = "content-title" href="{{ note.url }}">
+        {{ notes.title }}
+      </a>
+    </h2>
+    <span class="date-undertitle">{{ note.date | date_to_string }}</span>
+    {{ note.content | strip_html | truncate:150 }}
+	<a class = "readmore" href={{site.baseurl}}{{note.url}}>Read More</a>
+  </div>
+{% endfor %}
