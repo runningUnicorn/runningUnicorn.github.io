@@ -5,7 +5,7 @@ title: home
 
 {% for note in site.posts limit:site.article_num %}
   <h2>test</h2>
-  {% assign start = note.title | slice: 3 %}
+  {% assign start = note.title | slice: 0,3 %}
   <h2> start </h2>
   {% if start == "Note" %}
   <div>
