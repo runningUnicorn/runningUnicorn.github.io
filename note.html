@@ -3,11 +3,11 @@ layout: default
 title: home
 ---
 
-{% for notes in site.notes limit:site.article_num %}
+{% for note in site.notes limit:site.article_num %}
   <div>
     <h2>
       <a class = "content-title" href="{{ note.url }}">
-        {{ notes.title }}
+        {{ note.title }}
       </a>
     </h2>
     <span class="date-undertitle">{{ note.date | date_to_string }}</span>
