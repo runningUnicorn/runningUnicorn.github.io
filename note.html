@@ -5,10 +5,9 @@ title: home
 
 {% for note in site.posts limit:site.article_num %}
   <h2>test</h2>
-  {% assign startsWith = 'Note' %}
-  {% assign checkArray = note.title | split:startsWith %}
-  <h2> {{checkArray[0]}} </h2>
-  {% if checkArray[0] == blank %}
+  {% assign start = note.title | slice: 3 %}
+  <h2> start </h2>
+  {% if start == "Note" %}
   <div>
     <h2>
       <a class = "content-title" href="{{ note.url }}">
