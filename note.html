@@ -17,7 +17,7 @@ title: home
       {{ note.content | strip_html | truncate:150 }}
     <a class = "readmore" href={{site.baseurl}}{{note.url}}>Read More</a>
     </div>
-    {% assign limit = limit + 1 %}
+    {% increment limit%}
     {% if limit == site.note_num %}
       {% break %}
     {% endif %}
