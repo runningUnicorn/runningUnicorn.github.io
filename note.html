@@ -1,24 +1,24 @@
 ---
 layout: default
-title: home
+title: note
 ---
 
 {% assign limit = 0 %}
-{% for note in site.posts %}
-  {% assign start = note.title | slice: 0,4 %}
+{% for post in site.posts%}
+  {% assign start = post.title | slice: 0,4 %}
   {% if start == "Note" %}
     <div>
       <h2>
-        <a class = "content-title" href="{{ note.url }}">
-          {{ note.title }}
+        <a class = "content-title" href="{{ post.url }}">
+          {{ post.title }}
         </a>
       </h2>
-      <span class="date-undertitle">{{ note.date | date_to_string }}</span>
-      {{ note.content | strip_html | truncate:150 }}
-    <a class = "readmore" href={{site.baseurl}}{{note.url}}>Read More</a>
+      <span class="date-undertitle">{{ post.date | date_to_string }}</span>
+      {{ post.content | strip_html | truncate:150 }}
+    <a class = "readmore" href={{site.baseurl}}{{post.url}}>Read More</a>
     </div>
     {% assign limit = limit | plus: 1 %}
-    {% if limit == site.note_num %}
+    {% if limit == site.article_num %}
       {% break %}
     {% endif %}
   {% endif %}
