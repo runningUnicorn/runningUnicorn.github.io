@@ -1,7 +1,9 @@
 ---
 layout: post
 title: 我在Bosch的各国同事们
-category: Daily
+categories: 随笔
+tags: '随笔'
+author: debugi
 ---
 
 我在Bosch的实习来到了最后一个月，上周五，最玩的来的Jan实习结束，离开了。这让我觉得应该记录一下我在Bosch遇见的这群可爱的同事们。  

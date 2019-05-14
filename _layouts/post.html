@@ -1,28 +1,69 @@
 ---
 layout: default
 ---
+<article class="post">
 
-<div>
-  <h2 class="content-title">{{ page.title }}</h2>
-  <span class="date-undertitle">{{ page.date | date_to_string }}</span>
-  {{ content }}
-</div>
+  <p class="post-meta">
+    <time datetime="{{ page.date | date_to_string }}">{{ page.date | date_to_string }}</time>
 
-{% include share-page.html %}
-<!--
-<div>
-  <h3 class="content-title">Related Posts</h3>
-  <ul>
-    {% for post in site.related_posts limit:3 %}
-      <li>
-        <h4>
-          <a href="{{ post.url }}">
-            {{ post.title }}
-            <small class = "data-append">{{ post.date | date_to_string }}</small>
-          </a>
-        </h4>
-      </li>
+    {% if page.author %}
+      &nbsp;/&nbsp;
+      <span>{{ page.author }}</span>
+    {% endif %}
+  </p>
+
+  <h2 class="post-title">{{ page.title }}</h2>
+
+  <div>
+    {% for tag in page.tags %}
+      <a class="post-tag" href="{{ site.baseurl }}/archive#{{tag}}"> # {{ tag }} </a>
     {% endfor %}
-  </ul>
-</div>
--->
+  </div>
+  
+  <div class="post-content">
+
+    {{ content }}
+
+  </div>
+
+  <p class="split-title">SHARE:</p>
+  <div> {% include share.html %} </div>  
+
+  <p class="split-title">READ MORE: </p>
+  
+  <div>
+    {% if page.previous.url %}
+      <p class="link-meta">
+        <time datetime="{{ page.previous.date | date_to_string }}">{{ page.previous.date | date_to_string }}</time>
+        {% if page.previous.author %}
+          &nbsp;/&nbsp;
+          <span>{{ page.previous.author }}</span>
+        {% endif %}
+      </p>
+      <h2 class="link-title"><a href="{{ page.previous.url | relative_url}}">{{ page.previous.title }}</a></h2>
+      <div>
+        {% for tag in page.previous.tags %}
+          <a class="link-tag" href="{{ site.baseurl }}/archive#{{tag}}"> # {{ tag }} </a>
+        {% endfor %}
+      </div>
+    {% endif %}
+
+    <br>
+
+    {% if page.next.url %}
+      <p class="link-meta">
+        <time datetime="{{ page.next.date | date_to_string }}">{{ page.next.date | date_to_string }}</time>
+        {% if page.next.author %}
+          &nbsp;/&nbsp;
+          <span>{{ page.next.author }}</span>
+        {% endif %}
+      </p>
+      <h2 class="link-title"><a href="{{ page.next.url | relative_url}}">{{ page.next.title }}</a></h2>
+      <div>
+        {% for tag in page.next.tags %}
+          <a class="link-tag" href="{{ site.baseurl }}/archive#{{tag}}"> # {{ tag }} </a>
+        {% endfor %}
+      </div>
+    {% endif %}
+
+</article>

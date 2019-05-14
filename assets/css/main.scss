@@ -1,0 +1,42 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+
+@font-face { 
+  font-family: 'RobotoCondensed';
+  src: url('/assets/fonts/RobotoCondensed.woff2') format('woff');
+}
+
+
+@font-face { 
+  font-family: 'Crimson';
+  src: url('/assets/fonts/Crimson.woff2') format('woff');
+}
+
+@font-face { 
+  font-family: 'Karla';
+  src: url('/assets/fonts/Karla.woff2') format('woff');
+}
+
+@font-face { 
+  font-family: 'Pacifico';
+  src: url('/assets/fonts/Pacifico.woff2') format('woff');
+}
+
+@font-face { 
+  font-family: 'XingShu';
+  src: url('/assets/fonts/XingShu.woff2') format('woff');
+}
+
+// Import partials from `sass_dir` (defaults to `assets/_sass`)
+@import
+  "normalize",
+  "variables",
+  "base",
+  "layout",
+  "time-line",
+  "media-queries",
+  "syntax-highlighting"
+;

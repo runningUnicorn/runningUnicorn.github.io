@@ -1,3 +1,1 @@
-# looooongChen.github.io
-
-my personal blog hosted on github
+My personal blog hosted on Github

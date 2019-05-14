@@ -1,0 +1,32 @@
+<header class="main-header content-wrapper">
+
+  <input type="checkbox" id="menu-checkbox" />
+
+  <nav class="center-wrapper nav-main">
+
+    <a class="blog-logo" href="{{ site.baseurl }}/">{{ site.title }}</a>
+    
+    {% for my_page in site.pages %}
+      {% if my_page.active %}
+        <a href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
+      {% endif %}
+    {% endfor %}
+    <!--
+    <div><a href="/about/">About me</a></div>
+    <div class="dropdown">
+      <a href="/archive/">archive</a>
+      <div class="dropdown-content">
+          <a href="#">链接 1</a>
+          <a href="#">链接 2</a>
+          <a href="#">链接 3</a>
+        </div>
+    </div>
+    <div><a href="/memo/">memo</a></div>
+    <div><a href="/research/">Research&Publication</a></div>
+    <div><a href="/contact/">contact</a></div>
+    -->
+
+    <label for="menu-checkbox" class="toggle-button" data-open="☰" data-close="☰" onclick></label>
+  </nav>
+
+</header>

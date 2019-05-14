@@ -1,16 +1,47 @@
-# Permalinks
-permalink:        pretty
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
 
-# Setup
-title:            L | Chen
-tagline:          '中年不发福，老年不痴呆'
-baseurl:          /
+# Site settings
+title: Long's Life
+email: looooong.chen@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+baseurl: "" # the subpath of your site, e.g. /blog
+lang: "en"
+url: "http://localhost:4000" # the base hostname & protocol for your site
+twitter_username: jekyllrb
+github_username:  jekyll
+disqus_username:
 
-author:
-  name:           Long
+# Build settings
+markdown: kramdown
+permalink: /:categories/:title/
 
-paginate:         5
-recent-num:       8
-article_num:      5
-note_num:         10
+# Posts settings
+future: true
+safe: false
+lsi: false
+excerpt_separator: <!--more-->
 
+# Theme settings
+compress_html:
+  comments: ["<!-- ", " -->"]
+  clippings: all
+  endings: all
+
+
+sass:
+  sass_dir: assets/_sass
+  style: compressed
+
+
+images: '/assets/images'
+icons: '/assets/icons'
+portrait: 'me.jpg'
+port: 5001
