@@ -4,6 +4,7 @@
 
 $primary-color: #d4a259;
 $primary-color-hover: scale-color($primary-color, $lightness: 32%);
+$background-color: #4287f5;
 
 .center-wrapper {
   max-width: $break-point;
@@ -19,6 +20,7 @@ body {
   font: normal 14px/1.8 "Lato","PingFang SC","Microsoft YaHei",sans-serif;
   width: 100%;
   height: 100%;
+  background-color: $background-color;
   color: #000000;
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
