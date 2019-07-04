@@ -2,9 +2,9 @@
 * Base Styles
 * ========================================================================== */
 
-$primary-color: #ffffff;
+$primary-color: #d4a259;
 $primary-color-hover: scale-color($primary-color, $lightness: 32%);
-$background-color: #4287f5;
+$background-color: #ffffff;
 
 .center-wrapper {
   max-width: $break-point;
