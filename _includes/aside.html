@@ -11,6 +11,13 @@
           <img src="{{ site.images | relative_url }}/{{ site.portrait }}" alt="avatar" class='avatar'>
         </a>  
       <div class="heading">
+
+        {% if page.title %}
+          {{ page.title }}
+        {% else %}
+          No Title
+        {% endif %}
+        <!--
         {% if page.tags %}
           {% for tag in page.tags %}
             <a href="{{ site.baseurl }}/posts/#{{ tag | downcase }}">{{ tag | downcase }}</a>
@@ -25,7 +32,7 @@
       <p class="subtitle">
           渺万里层云,千山暮雪,只为热爱
       </p>
-      
+      -->
       <!--
       <p>
         {% if page.summary %}
