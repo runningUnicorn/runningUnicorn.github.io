@@ -1,8 +1,11 @@
 ---
 layout: post
-title: 我在Bosch的各国同事们
-categories: 随笔
-tags: '随笔'
+title:  "我在Bosch的各国同事们"
+crawlertitle: "我在Bosch的各国同事们"
+summary: "我在Bosch的各国同事们"
+date:   2017-08-30
+tags: 
+    流水账
 author: debugi
 ---
 
