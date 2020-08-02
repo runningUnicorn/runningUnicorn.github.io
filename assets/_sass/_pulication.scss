@@ -1,5 +1,9 @@
+ul {
+	display:inline-block;
+    list-style-position: inside;
+}
+
 .pub_title{
 	display: inline;
 	font-weight: 600;
-	vertical-align: text-top;
 }
