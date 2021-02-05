@@ -380,6 +380,7 @@ article {
 }
 
 .year li {
+  vertical-align: middle;
   padding: 3px 3px;
   font-family: "Crimson", "KaiTi", serif;
   font-weight: 600;
@@ -396,6 +397,8 @@ article {
 
 .date {
   text-align: right;
+  margin-left: 20px;
+  margin-right: 20px;
   font-family: 'Karla', 'SimHei', sans-serif;
   float: right;
   font-size: 15px;
